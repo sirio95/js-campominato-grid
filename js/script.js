@@ -15,6 +15,13 @@ start.addEventListener('click',
                 creazioneDiv(i, campo, classe);
             }
 
+            const arrBox= document.getElementsByClassName("box");
+            
+            console.log(arrBox);
+            for(let i=0; i<arrBox.length; i++){
+                arrBox[i].addEventListener('click', cambioCol);
+            }        
+
 
         }else if(difficulty === 'intermediate'){
             for(let i=1; i<82; i++){
